@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta charset="utf-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<div class="app">
+    <div class="app_icon">
+        
+    </div>
+</div>
+
+ <!-- 引用模板 -->
+    <script type="text/tmpl" id="textTmpl">
+        <ul class="text_cont">
+            <% for(var i = 0,len=list.length;i<len;i++){ %>
+                <li>
+                    <p class="text"><%= list[i].id %></p>
+                    
+                </li>
+            <%}%>
+        </ul>
+    </script>
+
+
+    <script src="js/bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import "var";
+@import "function";
+@import "mixin";
+@import "reset";
+
+.wrap {
+  width:px2rem(750);
+  height:px2rem(500);
+  @include font-dpr
+}
+.btn {
+  width:px2rem(180);
+  height:px2rem(80);
+  @include font-dpr(20);
+  display: inline-block;
+}
+
+li {
+  border-bottom:1px solid #ddd;
+  padding:10px;
+}
+
+@keyframes mymove
+{
+  from {left:0px;}
+  to {left:200px;}
+}
+
+.app {
+    &_icon{
+        position:relative;
+        background:url(../img/icon.png) no-repeat 0 0;
+        animation:mymove 2s infinite;
+        width:250px;
+        height: 200px;
+    }
+}
+
